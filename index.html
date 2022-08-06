@@ -6,11 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Space+Mono&family=Square+Peg&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="header">
-        Merge
+        <nav>
+            <a href="index.html"><img src="./images/logo.png" alt="Logo image"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro alias modi ad doloremque sequi libero, eius veritatis aut delectus fuga asperiores nemo 
+                cupiditate consequatur perspiciatis, dolores esse autem reiciendis ea?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis cupiditate
+                     maiores dolor dicta laborum error pariatur molestias neque autem tempore quidem deserunt id delectus, saepe eum voluptas reprehenderit! Quia?</p>
+            <a href="" class="hero-btn">Visit Us to Know More</a>
+        </div>
     </section>
-    
+
+      <!--- COURSES --->
+
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore qui in
+             doloribus dolor adipisci assumenda a asperiores libero! Laudantium, 
+             consequuntur corporis vitae voluptatum mollitia reiciendis rem voluptatem molestias
+              totam accusamus.
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Alias, inventore voluptate doloribus velit ex perferendis nemo 
+                    harum obcaecati a aliquid corporis eius vel distinctio quam, 
+                    accusantium molestias quo. Dolore, quos.
+                </p>
+
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Alias, inventore voluptate doloribus velit ex perferendis nemo 
+                    harum obcaecati a aliquid corporis eius vel distinctio quam, 
+                    accusantium molestias quo. Dolore, quos.
+                </p>
+
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Alias, inventore voluptate doloribus velit ex perferendis nemo 
+                    harum obcaecati a aliquid corporis eius vel distinctio quam, 
+                    accusantium molestias quo. Dolore, quos.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--- CAMPUS --->
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Voluptas cumque assumenda nisi. Praesentium molestias 
+             voluptatem omnis cumque assumenda quasi fugit, iste 
+             tempora non adipisci a facilis aliquid officiis? 
+             Obcaecati, maiores!</p>
+    </section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
 </body>
 </html>
